@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Anthony J. Politza" />
+    <meta
+      property="og:description"
+      content="Scientist & Engineer"
+    />
+    <meta
+      property="og:image"
+      content=""
+    />
+    <meta
+      property="og:url"
+      content=""
+    />
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Anthony J. Politza: scientist & engineer</title>
+    <style>
+      body {
+        opacity: 0;
+        transition: opacity 300ms ease-in-out;
+      }
+
+      body.loaded {
+        opacity: 1;
+      }
+	  img {
+		border-radius:50%
+		}
+    </style>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <section id="main">
+      <img
+        src="img/my_website_photo.jpg"
+        height="150px"
+        width="150px"
+        alt="Portrait of Anthony"
+        class="portrait"
+      />
+      <h1 style="color:white"> Hi! I'm Anthony J.&nbsp;Politza</h1>
+      <p>I love learning, so here's how I define myself:</p>
+      <ul>
+        <li>Biomedical Engineer (PhD)</li>
+        <li>Hardware Engineer</li>
+        <li>Bioassay Scientist</li>
+        <li>Technology Enthusiast</li>
+      </ul>
+      <p>
+        You can email me <a href="ajpolitza@gmail.com">here</a>,<br />
+        
+      </p>
+      <svg
+        class="squiggle"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 600 100"
+      >
+        <path
+          class="squiggle-path"
+          d="M 0 50 Q 50 0, 100 50 Q 150 100, 200 50 Q 250 0, 300 50 Q 350 100, 400 50 Q 450 0, 500 50 Q 550 100, 600 50"
+          stroke-width="5"
+          stroke-linecap="round"
+          fill="transparent"
+        ></path>
+      </svg>
+    </section>
+
+    <section id="projects">
+      <div class="heading">
+        <h2>Select projects</h2>
+        <a id="toggle-details" onclick="toggleDetails(this);" class="details-button">Open&nbsp;all</a>
+      </div>
+    </section>
+
+  <!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e658a8159cb34b1eb6097afd66af6bb0"}'></script><!-- Cloudflare Pages Analytics --></body>
+  <script>
+    window.addEventListener('load', function () {
+      document.querySelector('body').className = 'loaded';
+    })
+
+    const sections = [
+      {
+        id: "research",
+        title: "🧪 Research",
+      },
+      {
+        id: "work",
+        title: "🧑‍🔧 Work Experience",
+      },
+      {
+        id: "personal",
+        title: "🌴 Personal Hobbies",
+      },
+    ];
+    const projects = [
+      {
+        id: "Project4",
+        section: "research",
+        name: "HIV-RARE",
+        thumb: "HIV-RARE.webp",
+        fullimg: "HIV-RARE.png",
+        imgalt: "Key art for HIV-RARE.",
+        role: "",
+        description:
+          "Rapid and real-time development of a HIV sequencing platform for detecting Drug Resistant Mutations using portable hardware.",
+        linkname: "Under Review",
+        linkurl: "",
+      },
+      {
+        id: "Project3",
+        section: "research",
+        name: "ViraLite",
+        thumb: "ViraLite.webp",
+        fullimg: "ViraLite.png",
+        imgalt: "ViraLite",
+        role: "",
+        description:
+          "ViraLite: A ViraLite: An Ultracompact HIV Viral Load Self-Testing System Using Multiplexed LAMP for Internal Quality Control.",
+        linkname: "Under Review",
+        linkurl: "",
+      },
+      {
+        id: "project2",
+        section: "research",
+        name: "ProMagBot",
+        thumb: "ProMagBot.webp",
+        fullimg: "ProMagBot.png",
+        imgalt: "ProMagBot",
+        role: "",
+        description:
+          "Programmable Magnetic Robot (ProMagBot) for Automated Nucleic Acid Extraction at the Point of Need",
+        linkname: "Lab on Chip",
+        linkurl: "https://doi.org/10.1039/D3LC00545C",
+      },
+      {
+        id: "PCent",
+        section: "research",
+        name: "PCent",
+        thumb: "PCent.webp",
+        fullimg: "PCent.png",
+        imgalt: "PCent",
+        role: "",
+        description:
+          "Development and validation of a portable device for lab-free versatile nucleic acid extraction.",
+        linkname: "BioTechniques",
+        linkurl: "https://doi.org/10.1080/07366205.2024.2427544",
+      },
+	  {
+        id: "PSU",
+        section: "work",
+        name: "Penn State",
+        thumb: "",
+        fullimg: "",
+        imgalt: "PSU",
+        role: "",
+        description:
+          "Research Assistant",
+        linkname: "",
+        linkurl: "",
+      },
+	  {
+        id: "",
+        section: "work",
+        name: "Gannett Fleming",
+        thumb: "",
+        fullimg: "",
+        imgalt: "PSU",
+        role: "",
+        description:
+          "PE Understudy",
+        linkname: "",
+        linkurl: "",
+      },
+	  {
+        id: "",
+        section: "work",
+        name: "ChemCut Corp.",
+        thumb: "",
+        fullimg: "",
+        imgalt: "",
+        role: "",
+        description:
+          "Engineering Intern: Translation and Publication",
+        linkname: "ChemCut",
+        linkurl: "https://www.chemcut.net",
+      },
+	  {
+        id: "",
+        section: "work",
+        name: "New Pig Inc.",
+        thumb: "",
+        fullimg: "",
+        imgalt: "",
+        role: "",
+        description:
+          "Manufacturing Engineering Intern: Lean Management",
+        linkname: "New Pig",
+        linkurl: "https://www.newpig.com/",
+      },
+	  {
+        id: "",
+        section: "personal",
+        name: "Homelab",
+        thumb: "",
+        fullimg: "",
+        imgalt: "",
+        role: "",
+        description:
+          "Custom built media server and exploring app deployment using type 1 hypervisor.",
+        linkname: "",
+        linkurl: "",
+      },
+	  {
+        id: "",
+        section: "personal",
+        name: "Local AI",
+        thumb: "",
+        fullimg: "",
+        imgalt: "",
+        role: "",
+        description:
+          "Experimenting with open sourced AI models running on repurposed hardware.",
+        linkname: "",
+        linkurl: "",
+      },
+	  {
+        id: "",
+        section: "personal",
+        name: "3D Printing",
+        thumb: "",
+        fullimg: "",
+        imgalt: "",
+        role: "",
+        description:
+          "I am in the process of rebuilding two older printers, repurposed from lab equipment.",
+        linkname: "",
+        linkurl: "",
+      },
+	  {
+        id: "",
+        section: "personal",
+        name: "Home Renovations",
+        thumb: "",
+        fullimg: "",
+        imgalt: "",
+        role: "",
+        description:
+          "Using CAD and simulations to design home renovations.",
+        linkname: "",
+        linkurl: "",
+      },
+      // {
+      //   id: "cerulean",
+      //   section: "games",
+      //   name: "Cerulean",
+      //   thumb: "screenshot-cerulean.png",
+      //   fullimg: "screenshot-cerulean.png",
+      //   imgalt: "Screenshot from Cerulean showing a beach and pier in a pixelart style.",
+      //   role: "Programmer",
+      //   description:
+      //     "A short visual novel by Pink Pomeranian Parade, created during July/August 2015 for the Summer Novel Festival game jam.",
+      //   linkname: "Itch.io",
+      //   linkurl: "https://adirosa.itch.io/cerulean",
+      // },
+    ];
+    for (let i = 0; i < sections.length; i++) {
+      let section = `
+        <section id=${sections[i].id}>
+        <h3>${sections[i].title}</h3>
+        <ul class="projects-list"></ul>
+        </section>
+      `;
+      document.querySelector("#projects").innerHTML += section;
+    }
+    for (let i = 0; i < projects.length; i++) {
+      let project = projects[i];
+      let li = document.createElement("li");
+      li.id = project.id;
+      let details = document.createElement("details");
+      details.setAttribute('onclick', 'checkDetailsStatus(this)');
+      let detailsContent = document.createElement("div");
+      detailsContent.setAttribute('class', 'details-content')
+      if (project.thumb) {
+        detailsContent.innerHTML += `
+          <a class="imgLink" href="/img/${project.fullimg}">
+          <img src="img/${project.thumb}"
+          alt="${project.imgalt}" />
+          </a>
+        `;
+      }
+      detailsContent.innerHTML += `
+        <em>${project.role}</em>
+        <p>${project.description}</p>
+        <p><a href="${project.linkurl}">🔗 ${project.linkname}</a></p>
+      `;
+      details.innerHTML += `
+        <summary>${project.name}</summary>
+      `;
+      details.append(detailsContent);
+      li.append(details);
+      thisSection = document.querySelector(`#${project.section} .projects-list`);
+      thisSection.append(li);
+    }
+
+    function toggleDetails(el) {
+      if (document.querySelectorAll("details[open]").length == document.querySelectorAll("details").length) {
+        let details = document.querySelectorAll("details");
+        for (i = 0; i < details.length; i++) {
+          details[i].open = false;
+        }
+        document.querySelector('#toggle-details').textContent = "Open all";
+      } else {
+        let details = document.querySelectorAll("details");
+        for (i = 0; i < details.length; i++) {
+          details[i].open = true;
+        }
+        document.querySelector('#toggle-details').textContent = "Close all";
+      }
+    }
+
+    function checkDetailsStatus(el) {
+      setTimeout(() => {
+        if (document.querySelectorAll("details[open]").length == document.querySelectorAll("details").length) {
+          document.querySelector('#toggle-details').textContent = "Close all";
+        } else {
+          document.querySelector('#toggle-details').textContent = "Open all";
+        }
+      }, 1);
+    }
+  </script>
+
+</html>
