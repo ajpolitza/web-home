@@ -74,7 +74,7 @@ section {
 
 section>* {
     width: 100%;
-    max-width: calc(500px + 1rem);
+    max-width: calc(1000px + 1rem);
 }
 
 .portrait {
@@ -260,3 +260,4 @@ body.loaded .wave {
         font-size: 0.75rem;
     }
 }
+
